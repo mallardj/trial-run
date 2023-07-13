@@ -71,16 +71,16 @@ export default function Grid(props) {
     }
 
     return <Container style={{display: "flex", flexDirection: "column"}}>
-        <div id="section-container">
+        <Row id="section-container" style={{flex: "1"}}>
 
             {sections}
-        </div>
-        <div style={{marginTop: "auto"}}>
+        </Row>
+        <Row style={{marginTop: "auto"}}>
 
-            <div style={{display: "flex", justifyContent:"space-around"}}>
+            <div style={{display: "flex", justifyContent:"space-around", flex: "initial"}}>
                 {index < partitions - 1 ? <div onClick={readMore}><img src={readMoreIcon}></img></div> : <div></div>}
                 {index > 0 ? <div onClick={readLess}><img src={readLessicon} ></img></div> : <div></div>}
             </div>
-        </div>
+        </Row>
     </Container>
 }
