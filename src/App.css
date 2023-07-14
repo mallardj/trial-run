@@ -6,6 +6,18 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Mickey";
+  src: url("./Assets/fonts/MICKEY.TTF");
+  font-weight: 500;
+}
+
+
+.secondary-font {
+  font-family: "Mickey";
+  color: rgb(229,190, 112);
+  font-size: 28px
+}
 * {
   background-color: rgb(15, 4, 22);
   color: rgb(255, 255, 255);
@@ -29,6 +41,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.simple-side-space {
+  display:flex;
+  justify-content:space-around;
+  padding: 30px
 }
 
 .centered {
