@@ -19,7 +19,8 @@
   font-size: 28px
 }
 * {
-  background-color: rgb(15, 4, 22);
+  font: 1em "Impress";
+  background-color: rgb(15, 4, 22) !important;
   color: rgb(255, 255, 255);
   font-family: "Impress";
 }
@@ -44,8 +45,7 @@
 }
 
 .simple-side-space {
-  display:flex;
-  justify-content:space-around;
+  display: inline-flex;
   padding: 30px
 }
 
@@ -69,8 +69,12 @@
 }
 
 .fit-content-double {
-  max-width: 40vw;
   display: inline-flex;
+  max-width: 100%
+}
+
+.fit-content-double img {
+  max-width: 100%
 }
 
 .navbar-split {
@@ -78,6 +82,12 @@
   display: flex;
   justify-content: space-between;
 }
+
+.navbar-split img {
+  height: auto;
+  max-width: 80%;
+}
+
 
 .bordered {
   border-radius: 5px;

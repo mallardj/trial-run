@@ -7,12 +7,13 @@ import login_icon from "../Assets/website-buttons/HOVERED Login.png"
 import help_icon from "../Assets/website-buttons/HOVERED Help.png" 
 import play_icon from "../Assets/website-buttons/HOVERED Play Now.png" 
 
-export default function NavBar(props) {
+export default function NavBar() {
     return <div>
-        <Navbar>
+        <Navbar expand="lg" className="bg-body-tertiary navbar-dark">
             <Container >
+                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="navbar-split">
+                <Nav className="navbar-split me-auto">
                     <Nav.Link href="#history"><img src={history_icon} className="button-pop"></img></Nav.Link>
                     <Nav.Link href="#comics"><img src={comics_icon} className="button-pop"></img></Nav.Link>
                     <Nav.Link href="#artwork"><img src={artwork_icon} className="button-pop"></img></Nav.Link>
